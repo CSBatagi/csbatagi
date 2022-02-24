@@ -2,15 +2,20 @@
 *
 *  Originally coded by Shromilder
 *  Upgraded and converted to Amx Mod X by Infra
-*  8.11a edits for AMXX 1.9 and NEMESIS Log messages by AT KAFASI
+*  8.11a and 8.11b edits for AMXX 1.9 and NEMESIS Log messages by AT KAFASI
 *
-*   	Current version: 8.11a
+*   	Current version: 8.11b
 *
 *  This file is provided as is (no warranties).
 *
 *
 *
 *  Changelog:
+*
+*     - 8.11b: (minor edits) - Thursday, February 24, 2022
+*		NEMESIS START and NEMESIS STOP messages edited as MAC_BASLATILDI and MAC_DURAKLATILDI
+*		fixed deprecated symbol errors for client_disconnect and strbreak
+*
 *  ----------
 *
 *     - 8.11a: (minor edits) - Friday, December 24, 2021
@@ -961,7 +966,7 @@ public half_live_message()
 	new map[64]
 	get_mapname(map,63)
 	log_message(map)
-	log_message("*** [NEMESIS START] ***")
+	log_message("***MAC_BASLATILDI***")
 	
 	return PLUGIN_CONTINUE
 }
@@ -1268,7 +1273,7 @@ public half_stop()
 			new map[64]
 			get_mapname(map,63)
 			log_message(map)
-			log_message("*** [NEMESIS STOP] ***")
+			log_message("***MAC_DURAKLATILDI***")
 			
 			// Take screenshots
 			screenshot_setup()
@@ -1392,7 +1397,7 @@ public half_stop()
 				new map[64]
 				get_mapname(map,63)
 				log_message(map)
-				log_message("*** [NEMESIS STOP] ***")
+				log_message("***MAC_DURAKLATILDI***")
 				
 				
 				if (ct_score > t_score) // CT's won
