@@ -963,10 +963,6 @@ public half_live_message()
 	client_print(0,print_chat,"* [AMX MATCH] %L", LANG_PLAYER,"AMX_LIVE")
 	client_print(0,print_chat,"* [AMX MATCH] %L", LANG_PLAYER,"AMX_LIVE")
 	client_print(0,print_chat,"* [AMX MATCH] %L", LANG_PLAYER,"AMX_LIVE")
-	new map[64]
-	get_mapname(map,63)
-	log_message(map)
-	log_message("***MAC_BASLATILDI***")
 	
 	return PLUGIN_CONTINUE
 }
@@ -1270,10 +1266,6 @@ public half_stop()
 					set_hudmessage(255, 255, 255, -1.0, 0.40,0, 2.0, 8.0, 0.8, 0.8, -1) 
 			}
 			show_hudmessage(0,hud_message)
-			new map[64]
-			get_mapname(map,63)
-			log_message(map)
-			log_message("***MAC_DURAKLATILDI***")
 			
 			// Take screenshots
 			screenshot_setup()
@@ -1394,10 +1386,6 @@ public half_stop()
 					set_hudmessage(255, 255, 255, -1.0, 0.30, 0, 2.0, 8.0, 0.8, 0.8, -1)
 				}
 				show_hudmessage(0,hud_message)
-				new map[64]
-				get_mapname(map,63)
-				log_message(map)
-				log_message("***MAC_DURAKLATILDI***")
 				
 				
 				if (ct_score > t_score) // CT's won
