@@ -2,7 +2,7 @@
 *
 *  Originally coded by Shromilder
 *  Upgraded and converted to Amx Mod X by Infra
-*  8.11a and 8.11b edits for AMXX 1.9 and NEMESIS Log messages by AT KAFASI
+*  8.11a, 8.11b, 8.11c edits for AMXX 1.9 and NEMESIS Log messages by AT KAFASI
 *
 *   	Current version: 8.11b
 *
@@ -11,6 +11,12 @@
 *
 *
 *  Changelog:
+*
+*     - 8.11c: (minor edits) - Monday, April 25, 2022
+*		NEMESIS START and NEMESIS STOP messages removed due to design change.
+*		Messages incorporated to .cfg files under the /leagues/ folder.
+*
+*  ----------
 *
 *     - 8.11b: (minor edits) - Thursday, February 24, 2022
 *		NEMESIS START and NEMESIS STOP messages edited as MAC_BASLATILDI and MAC_DURAKLATILDI
